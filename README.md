@@ -90,15 +90,20 @@ The sample output for the sample input file above should look like this:
 
 
 
-## Concluding Remarks
+## How to run
 
+Open terminal and run
 
+```
+java -jar path/to/mercateo_case_study.jar
+```
 
-Apply best software design and development practices and document your approach, in particlar regarding the algorithms and data structures you chose. Don't forget to put comments into your source files.
+Input path to the input file
 
+```
+path/to/input.txt
+```
 
-
-Good luck!
 
 
 
