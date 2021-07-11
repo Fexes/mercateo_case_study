@@ -32,7 +32,6 @@ public class Main {
 
     }
 
-
     /**
      * @param inputFile is the path provided by the user to the input file.
      * @return a String containing solution for the given input.
@@ -78,7 +77,5 @@ public class Main {
                 new Validation<>(pack -> pack.getItems().size() > 15, "more than 15 item.")
         );
     }
-
-
 
 }
