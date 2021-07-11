@@ -15,6 +15,8 @@ Your goal is to determine which items to put in the package so that the total co
 
 
 
+
+
 ## How to run
 
 Open terminal and run
@@ -33,6 +35,9 @@ path/to/input.txt
 
 
 
+
+
+
 A sample input file looks like this:
 
 
@@ -43,6 +48,9 @@ A sample input file looks like this:
 75 : (1,85.31,€29) (2,14.55,€74) (3,3.98,€16) (4,26.24,€55) (5,63.69,€52) (6,76.25,€75) (7,60.02,€74) (8,93.18,€35) (9,89.95,€78)
 56 : (1,90.72,€13) (2,33.80,€40) (3,43.15,€10) (4,37.97,€16) (5,46.81,€36) (6,48.77,€79) (7,81.80,€45) (8,19.36,€79) (9,6.76,€64)
 ```
+
+
+
 
 
 
@@ -57,13 +65,11 @@ The solution for each test case should be printed out on a single line. On this 
 The sample output for the sample input file above should look like this:
 
 
-
 ```
 4
 -
 2,7
 8,9
-
 ```
 
 
