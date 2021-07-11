@@ -1,6 +1,6 @@
 package com.farhan.case_study.packer;
 
-import com.farhan.case_study.packer.exception.ValidationException;
+import com.farhan.case_study.packer.exceptions.ValidationException;
 
 import java.util.function.Function;
 

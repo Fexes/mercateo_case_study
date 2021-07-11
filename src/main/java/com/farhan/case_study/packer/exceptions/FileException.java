@@ -1,4 +1,4 @@
-package com.farhan.case_study.packer.exception;
+package com.farhan.case_study.packer.exceptions;
 
 /**
  * Exceptions are thrown when a conditions are not met for reading a file.

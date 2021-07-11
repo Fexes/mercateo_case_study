@@ -1,6 +1,4 @@
-package com.farhan.case_study.packer.exception;
-
-import com.farhan.case_study.packer.Validation;
+package com.farhan.case_study.packer.exceptions;
 
 /**
  * Exceptions are thrown when a conditions are not met for the scenario.
