@@ -26,10 +26,24 @@ public class CaseStudyTest {
     }
 
     @Test(expected = FileException.class)
-    public void pack_item_with_invalid_index() throws Exception {
-        pack(samplePath("item_with_invalid_index"));
+    public void invalidCapacity() throws Exception {
+        pack(samplePath("invalid_capacity"));
     }
 
+    @Test(expected = FileException.class)
+    public void invalidCost() throws Exception {
+        pack(samplePath("invalid_cost"));
+    }
+
+    @Test(expected = FileException.class)
+    public void invalidIndex() throws Exception {
+        pack(samplePath("invalid_index"));
+    }
+
+    @Test(expected = FileException.class)
+    public void invalidWeight() throws Exception {
+        pack(samplePath("invalid_weight"));
+    }
 
     public String samplePath(String s) {
         return new File("src/test/resources/" + s).getAbsolutePath();
