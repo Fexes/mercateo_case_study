@@ -4,7 +4,7 @@ import com.farhan.case_study.packer.exception.FileException;
 import com.farhan.case_study.packer.exception.ValidationException;
 import com.farhan.case_study.models.Item;
 import com.farhan.case_study.models.Package;
-import com.farhan.case_study.packer.LineParser;
+import com.farhan.case_study.packer.FileReader;
 import com.farhan.case_study.packer.Solution;
 import com.farhan.case_study.packer.Validation;
 
@@ -38,7 +38,7 @@ public class Main {
      * @throws FileException if file path is wrong or has invalid input.
      */
     public static String pack(String inputFile) throws FileException {
-        LineParser parser = new LineParser(buildScenarioValidators(), buildItemValidators());
+        FileReader parser = new FileReader(buildScenarioValidators(), buildItemValidators());
         try (Stream<String> stream = Files.lines(Paths.get(inputFile))) {
             List<String> lines = stream.collect(Collectors.toList());
             List<Solution> scenarios = new ArrayList<>();

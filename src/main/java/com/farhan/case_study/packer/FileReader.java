@@ -9,10 +9,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * The class {@link LineParser} is for reading data from input file.
+ * The class {@link FileReader} is for reading data from input file.
  * @author Farhan Fida
  */
-public class LineParser {
+public class FileReader {
 
     private List<Validation<Solution>> scenarioValidations;
     private List<Validation<Item>> itemValidations;
@@ -23,7 +23,7 @@ public class LineParser {
     private Pattern linePattern = Pattern.compile("^(-?\\d+) : (.+)");
     private Pattern fieldsPattern = Pattern.compile("\\((-?\\d+),(-?\\d+\\.?\\d*?),€(-?\\d+)\\)");
 
-    public LineParser(List<Validation<Solution>> scenarioValidations, List<Validation<Item>> itemValidations) {
+    public FileReader(List<Validation<Solution>> scenarioValidations, List<Validation<Item>> itemValidations) {
         this.scenarioValidations = scenarioValidations;
         this.itemValidations = itemValidations;
     }
