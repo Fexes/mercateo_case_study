@@ -12,35 +12,22 @@ Your goal is to determine which items to put in the package so that the total co
 
 
 
-## Constraints
 
 
 
-1. The maximum weight that a package can hold must be <= 100.
+## How to run
 
-2. There may be up to 15 items you can to choose from.
+Open terminal and run
 
-3. The maximum weight of an item should be <= 100.
+```
+java -jar path/to/mercateo_case_study.jar
+```
 
-4. The maximum cost of an item should be <= €100.
+Input path to the input file
 
-
-
-## Program Specification
-
-
-
-Write a program, preferably in Java, which can be run on the command line in order to solve this problem. The program should take one command line argument, which contains the path to a text file. This text file should contain several lines, each line describing one test case for the problem.
-
-
-
-Each line starts with the maximum weight of the package for this test case. It is followed by ` : ` and then the list of descriptions of the items available for packaging. Each item description contains, in parentheses, the item's number, starting at 1, its weight and its cost (preceded by a € sign).
-
-
-
-In case of a constraint violation, your program should indicate this fact to the user, for example by throwing an exception with a descriptive message, allowing the user to address this problem.
-
-
+```
+path/to/input.txt
+```
 
 ### Sample Input
 
@@ -51,15 +38,10 @@ A sample input file looks like this:
 
 
 ```
-
 81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) (5,30.18,€9) (6,46.34,€48)
-
 8 : (1,15.3,€34)
-
 75 : (1,85.31,€29) (2,14.55,€74) (3,3.98,€16) (4,26.24,€55) (5,63.69,€52) (6,76.25,€75) (7,60.02,€74) (8,93.18,€35) (9,89.95,€78)
-
 56 : (1,90.72,€13) (2,33.80,€40) (3,43.15,€10) (4,37.97,€16) (5,46.81,€36) (6,48.77,€79) (7,81.80,€45) (8,19.36,€79) (9,6.76,€64)
-
 ```
 
 
@@ -77,32 +59,13 @@ The sample output for the sample input file above should look like this:
 
 
 ```
-
 4
-
 -
-
 2,7
-
 8,9
 
 ```
 
-
-
-## How to run
-
-Open terminal and run
-
-```
-java -jar path/to/mercateo_case_study.jar
-```
-
-Input path to the input file
-
-```
-path/to/input.txt
-```
 
 
 
